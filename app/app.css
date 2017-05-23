@@ -1,0 +1,37 @@
+body {
+    background-color: #292B2E;
+}
+
+.shooter-Container{
+    width: 760px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-Title {
+    color: white;
+    margin: 30px 0 15px 20px;
+}
+
+.subtitle {
+    color: white;
+    margin-left: 20px;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.table-head {
+    background-color: #3c7026;
+    color: white;
+    text-transform: uppercase;
+}
+
+.position-width{
+    width: 30px;
+}
