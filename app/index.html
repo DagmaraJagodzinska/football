@@ -3,37 +3,14 @@
 <head>
     <meta charset=”UTF-8”>
     <title>Kurs AngularJS</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />    
     <link rel="stylesheet" href="app.css" />
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="app.js" type="text/javascript"></script> <!-- aplikacja angularJS -->
-    <script src="fotballController.js" type="text/javascript"></script> <!-- glowny controller przypisany do aplikacji AngularJS -->
-</head
+    <script src="bower_components/angular/angular.js"></script></script>
+    <script src="app.module.js" type="text/javascript"></script> <!-- aplikacja angularJS -->
+    <script src="shooter-list/shooter-list.module.js"></script>
+    <script src="shooter-list/shooter-list.component.js"></script>
+</head>
 <body>
-  <div class="container shooter-Container" ng-controller='fotballController'>
-    <div class="row header">
-        <img src="img/logo.jpg">
-        <div>
-            <h3 class="header-Title"> Top Strzelcy Serie A </h3>
-            <p class="subtitle">sezon 2016/2016</p>
-        </div>
-        <table class="table table-striped">
-            <thead class="table-head">
-                <tr>
-                    <th class="text-center position-width">Pozycja</th>
-                    <th>Zawodnik</th>
-                    <th class="text-center">Gole</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="item in myData | limitTo : 10">    
-                    <td class="text-center position-width">{{$index+1}}</td>  
-                    <td>{{item.fullname}}</td>
-                    <td class="text-center">{{item.goals}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>   
-  </div>
+    <shooter-list></shooter-list>
 </body>
 </html>
