@@ -1,5 +1,7 @@
-'use strict';
+(function() {
+    'use strict';
 
-angular.module('footballApp',[
-    'shooterList'
-]);
+    angular.module('footballApp',[
+        'shooterList'
+    ]);
+})();

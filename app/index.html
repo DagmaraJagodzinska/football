@@ -3,6 +3,7 @@
 <head>
     <meta charset=”UTF-8”>
     <title>Kurs AngularJS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">       
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />    
     <link rel="stylesheet" href="app.css" />
     <script src="bower_components/angular/angular.js"></script></script>
@@ -11,6 +12,22 @@
     <script src="shooter-list/shooter-list.component.js"></script>
 </head>
 <body>
-    <shooter-list></shooter-list>
+    <div class="container shooter-Container">
+        <div class="row header">
+            <img src="img/logo.jpg">
+            <div>
+                <h3 class="header-Title"> Top strzelcy Serie A </h3>
+                <p class="subtitle">sezon 2016/2016</p>
+            </div>
+        </div>  
+        <div class="row shooter-Container">
+            <shooter-list></shooter-list>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copy">powered by PGS</p>  
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,25 +1,16 @@
-<div class="container shooter-Container">
-    <div class="row header">
-        <img src="img/logo.jpg">
-        <div>
-            <h3 class="header-Title"> Top Strzelcy Serie A </h3>
-            <p class="subtitle">sezon 2016/2016</p>
-        </div>
-        <table class="table table-striped">
-            <thead class="table-head">
-                <tr>
-                    <th class="text-center position-width">Pozycja</th>
-                    <th>Zawodnik</th>
-                    <th class="text-center">Gole</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="item in vm.myData | limitTo : 10">    
-                    <td class="text-center position-width">{{$index+1}}</td>  
-                    <td>{{item.fullname}}</td>
-                    <td class="text-center">{{item.goals}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>   
-</div>
+<table class="table table-striped">
+    <thead class="table-head">
+        <tr>
+            <th class="text-center position-width">Pozycja</th>
+            <th class="footballer-tableheader">Zawodnik</th>
+            <th class="text-center">Gole</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in vm.myData | limitTo : 10">
+            <td class="text-center position-tabledata is-bold">{{$index+1}}</td>
+            <td class="footballer-tabledata is-light">{{item.fullname}}</td>
+            <td class="text-center is-bold goal-tabledata">{{item.goals}}</td>
+        </tr>
+    </tbody>
+</table>

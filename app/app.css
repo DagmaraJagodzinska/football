@@ -1,5 +1,6 @@
 body {
     background-color: #292B2E;
+    font-family: 'Roboto', sans-serif;
 }
 
 .shooter-Container{
@@ -16,6 +17,14 @@ body {
     margin: 30px 0 15px 20px;
 }
 
+.is-bold {
+    font-weight: 800;
+}
+
+.is-light {
+   font-weight: 300;
+}
+
 .subtitle {
     color: white;
     margin-left: 20px;
@@ -26,12 +35,83 @@ body {
     background-color: white;
 }
 
+.table > tbody > tr > td, 
+.table > thead > tr > th {
+    border: none;
+}
+
+.table > tbody > tr > td {
+    padding: 0;
+}
+
 .table-head {
     background-color: #3c7026;
     color: white;
     text-transform: uppercase;
 }
 
-.position-width{
-    width: 30px;
+.table .footballer-tableheader{
+    padding-left: 45px;
+}
+
+.table .position-tabledata {
+    width: 60px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.table .goal-tabledata {
+    width: 90px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.table .footballer-tabledata {
+    font-size: 20px;
+    position: relative;
+    padding: 12px 12px 12px 45px;
+}
+
+.footballer-tabledata:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 1px;
+    height: 30px;
+    right: 0;
+    background-color: #d3d3d3;
+} 
+
+.footballer-tabledata:before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 1px;
+    height: 30px;
+    left: 0;
+    background-color: #d3d3d3;
+} 
+
+.footer {
+    background-color: #15191c;
+    height: 90px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    border-top: 1px solid #5a646b;
+    border-bottom: 1px solid #5a646b;
+    padding: 10px;
+}
+
+.copy {
+    color: #5a646b;
+    align-self: center;
+    margin: 0;
 }
