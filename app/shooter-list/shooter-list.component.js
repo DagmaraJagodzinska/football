@@ -2,8 +2,8 @@
     'use strict';
 
 angular.
-  module('shooterList').
-  component('shooterList', {
+  module('shooterList')
+  .component('shooterList', {
     templateUrl: 'shooter-list/shooter-list.template.html',
     controllerAs: "vm",
     controller: function ($http){
