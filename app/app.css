@@ -121,37 +121,70 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+    body {
+        padding-bottom: 100px;
+    }
+
+    .shooter-Container {
+        width: 500px;
+    }
+
     .header {
-       margin: 60px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        padding-left: 5px;
     }
     
     .header-Title {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .subtitle {
-        font-size: 30px;
+        font-size: 15px;
     }
 
     .table {
-        width: 80%;
         margin: 0 auto;
     }
 
-    .table .footballer-tabledata {
-        font-size: 30px;
+    .copy {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .shooter-Container {
+        width: 300px;
     }
 
-    .table > thead > tr > th  {
-        font-size: 25px;
-        padding: 15px;
+    img {
+        width: 35%;
+        height: 35%;
+    }
+
+    .table .footballer-tabledata {
+        font-size: 20px;
+        padding: 15px 12px 12px 30px;
     }
 
     .table .position-tabledata {
-        padding: 16px;
+        font-size: 20px;
+        padding: 15px;
     }
 
-    .copy {
+    .table .goal-tabledata {
         font-size: 20px;
+        padding: 15px;
+    }
+
+    .table .footballer-tableheader {
+        padding-left: 30px;
+    }
+
+    .footer-container {
+        width: 250px;
     }
 }
