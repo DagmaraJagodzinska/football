@@ -1,8 +1,8 @@
 (function() {
     'use strict';
 
-angular.
-  module('shooterList')
+angular
+.module('shooterList')
   .component('shooterList', {
     templateUrl: 'shooter-list/shooter-list.template.html',
     controllerAs: "vm",
